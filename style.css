@@ -100,7 +100,6 @@
 @media screen and (max-width: 800px) {
     .container {
         flex-direction: column;
-        border: 2px solid black;
     }
 
     .left-screen {
