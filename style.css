@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.left-screen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #02daff;
+}
+
+
+.left-screen img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.right-screen {
+    min-width: 500px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: #02daff;
+}
+
+.right-screen h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 2px rgb(37, 37, 37);
+}
+
+.form-validator {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.form-validator input {
+    width: 100%;
+    padding: 8px;
+    font-family: 'Share Tech Mono', monospace;
+    outline: none;
+}
+
+.form-validator label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px rgb(37, 37, 37);
+}
+
+.form-validator label input {
+    margin-top: 5px;
+}
+
+.error {
+    margin-top: 3px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #f00;
+}
+
+.botao {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 2px rgb(37, 37, 37);
+    font-weight: bold;
+    background-color: inherit;
+    border: 3px solid #fff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #02daff;
+    text-shadow: none;
+}
+
+.login {
+    font-family: 'Share Tech Mono', monospace;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        border: 2px solid black;
+    }
+
+    .left-screen {
+        display: none;
+    }
+
+    .right-screen {
+        min-width: fit-content;
+        flex: 1;
+        order: -1;
+    }
+
+    .right-screen h1 {
+        margin-bottom: 5px;
+    }
+
+    .form-validator {
+        font-size: 15px;
+        gap: 20px;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
